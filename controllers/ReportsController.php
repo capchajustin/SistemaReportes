@@ -1,5 +1,5 @@
 <?php
-require_once 'config/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config/Database.php';
 require_once 'models/Activity.php';
 
 class ReportsController {
