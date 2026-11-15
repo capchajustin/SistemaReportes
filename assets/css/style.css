@@ -1,0 +1,125 @@
+:root {
+    --bg-dark: #0b151b;
+    --bg-navbar: #0f1c24;
+    --bg-card: #15242e;
+    --bg-notice: #1a2a34;
+    --cyan-accent: #00a8cc;
+    --cyan-hover: #008dae;
+    --border-notice: #d4a373;
+    --text-white: #ffffff;
+    --text-muted: #9ab0c0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header / Navbar */
+.navbar-custom {
+    background-color: var(--bg-navbar);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-text {
+    color: var(--cyan-accent);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Botones principales */
+.btn-cyan {
+    background-color: var(--cyan-accent);
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-cyan:hover {
+    background-color: var(--cyan-hover);
+    color: #ffffff;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #2a4150;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 10px 24px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: #1e3341;
+    color: #ffffff;
+}
+
+/* Tarjeta Central */
+.main-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 680px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.badge-pill-custom {
+    background-color: rgba(0, 168, 204, 0.15);
+    color: var(--cyan-accent);
+    border: 1px solid var(--cyan-accent);
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title-hero {
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.title-hero .cyan-text {
+    color: var(--cyan-accent);
+}
+
+.description-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Caja de Aviso */
+.notice-box {
+    background-color: var(--bg-notice);
+    border-left: 4px solid var(--border-notice);
+    border-radius: 4px;
+    padding: 15px 20px;
+    text-align: left;
+    margin-top: 35px;
+}
+
+.notice-title {
+    color: var(--border-notice);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.notice-body {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    margin: 0;
+    line-height: 1.5;
+}
